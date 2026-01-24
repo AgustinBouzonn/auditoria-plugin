@@ -1,0 +1,4 @@
+websockets
+openai
+python-dotenv
+numpy

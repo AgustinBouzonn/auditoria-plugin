@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "AuditorIA - Real-time Transcription",
+  "version": "2.0",
+  "description": "Captures audio (mic + system), transcribes in real-time, and provides AI-powered recommendations.",
+  "permissions": [
+    "tabCapture",
+    "desktopCapture",
+    "offscreen",
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>", "https://api.openai.com/*"],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/offscreen/offscreen.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
