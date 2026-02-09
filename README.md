@@ -1,5 +1,10 @@
 # AuditorIA - Transcripción en tiempo real con IA
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://github.com/AgustinBouzonn/auditoria-plugin)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green?style=flat-square&logo=google-chrome&logoColor=white)](https://github.com/AgustinBouzonn/auditoria-plugin)
+[![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)](https://github.com/AgustinBouzonn/auditoria-plugin)
+[![Version](https://img.shields.io/badge/version-2.0-blue?style=flat-square)](https://github.com/AgustinBouzonn/auditoria-plugin)
+
 Extensión de Chrome para transcribir audio dual (micrófono + sistema) en tiempo real y generar recomendaciones para agentes de call center.
 
 **Versión 2.0 - Ahora funciona solo como extensión de Chrome, sin servidor Python.**
